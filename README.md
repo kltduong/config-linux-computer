@@ -1,0 +1,3 @@
+# Linux Development Setup
+
+This repository contains setup instructions and configurations for my Linux development environment, including Git, VS Code, and SSH for managing multiple Git accounts...
