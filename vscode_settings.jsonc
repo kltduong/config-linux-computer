@@ -1,0 +1,230 @@
+{
+  // Core editor
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.fontFamily": "Menlo for Powerline",
+  "editor.fontSize": 14,
+  "editor.hideCursorInOverviewRuler": true,
+  "editor.guides.bracketPairs": true,
+  "editor.minimap.enabled": false,
+  // Suggestions
+  "editor.suggest.preview": true,
+  "editor.suggest.filterGraceful": false,
+  "editor.snippetSuggestions": "bottom",
+  "editor.inlineSuggest.suppressSuggestions": true,
+  "editor.quickSuggestions": {
+    "other": "on",
+    "comments": "on",
+    "strings": "on",
+  },
+  // Formatting
+  "prettier.printWidth": 120,
+  "prettier.documentSelectors": [
+    "**/*.astro"
+  ],
+  "diffEditor.ignoreTrimWhitespace": false,
+  // Language overrides
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features",
+  },
+  "[javascript]": {
+    "editor.tabSize": 2,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "always",
+    },
+  },
+  "[typescript]": {
+    "editor.tabSize": 2,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "always",
+    },
+  },
+  "[typescriptreact]": {
+    "editor.tabSize": 2,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "always",
+    },
+  },
+  "[python]": {
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.codeActionsOnSave": {
+      "source.organizeImports.ruff": "always", // reorder imports via Ruff
+      "source.fixAll.ruff": "explicit", // run Ruff fixes only when explicitly requested
+    },
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features",
+  },
+  "[toml]": {
+    "editor.defaultFormatter": "tamasfe.even-better-toml",
+  },
+  "[markdown]": {
+    "editor.wordWrap": "on",
+    "diffEditor.ignoreTrimWhitespace": true,
+  },
+  "[dockercompose]": {
+    "editor.tabSize": 2,
+    "editor.autoIndent": "advanced",
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": false,
+      "strings": true,
+    },
+  },
+  "[yaml]": {
+    "editor.tabSize": 2,
+  },
+  // Python
+  // Pylance settings are ignored when pyrightconfig.json or pyproject.toml is present.
+  "python.languageServer": "Pylance",
+  "python.analysis.typeCheckingMode": "strict",
+  "python.analysis.completeFunctionParens": true,
+  "python.analysis.autoImportCompletions": true,
+  "python.analysis.autoFormatStrings": true,
+  "python.testing.pytestEnabled": true,
+  "python.testing.unittestEnabled": false,
+  // JavaScript and TypeScript
+  "js/ts.preferences.quoteStyle": "double",
+  "js/ts.implicitProjectConfig.checkJs": true,
+  // Web and templates
+  "html.format.wrapLineLength": 120,
+  "tailwindCSS.includeLanguages": {
+    "plaintext": "html",
+    "html": "html",
+    "javascript": "javascript",
+    "css": "css",
+  },
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "jinja": "html",
+    "jinja-html": "html",
+  },
+  "emmet.triggerExpansionOnTab": true,
+  "auto-close-tag.activationOnLanguage": [
+    "xml",
+    "php",
+    "blade",
+    "ejs",
+    "jinja",
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "plaintext",
+    "markdown",
+    "vue",
+    "liquid",
+    "erb",
+    "lang-cfml",
+    "cfml",
+    "HTML (EEx)",
+    "HTML (Eex)",
+    "plist",
+  ],
+  // Markdown
+  "markdown.preview.fontFamily": "'Fira Code', 'Consolas', 'Courier New', monospace",
+  // Files, search, and explorer
+  "files.autoSave": "onFocusChange",
+  "files.associations": {
+    "*.css": "tailwindcss",
+    "*.jinja": "jinja-html",
+  },
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/.pytest_cache": true,
+  },
+  "files.watcherExclude": {
+    "**/.build/**": true,
+    "**/.venv/**/*": true,
+    "**/*_buk/**/*": true,
+    "**/cdk.out/**": true,
+  },
+  "search.exclude": {
+    "**/.build/**": true,
+    "**/.venv/**": true,
+    "**/cdk.out/**": true,
+  },
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.fileNesting.patterns": {
+    "*.ts": "${capture}.js",
+    "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
+    "*.jsx": "${capture}.js",
+    "*.tsx": "${capture}.ts",
+    "tsconfig.json": "tsconfig.*.json",
+    "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb",
+    "*.sqlite": "${capture}.${extname}-*",
+    "*.db": "${capture}.${extname}-*",
+    "*.sqlite3": "${capture}.${extname}-*",
+    "*.db3": "${capture}.${extname}-*",
+    "*.sdb": "${capture}.${extname}-*",
+    "*.s3db": "${capture}.${extname}-*",
+  },
+  // Workbench
+  "workbench.startupEditor": "none",
+  "workbench.settings.useSplitJSON": true,
+  "workbench.settings.editor": "json",
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook",
+    "*.db": "default",
+  },
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.preferredDarkColorTheme": "Dark 2026",
+  "workbench.secondarySideBar.defaultVisibility": "visible",
+  "workbench.externalBrowser": "chrome",
+  // Theme tokens
+  "editor.tokenColorCustomizations": {
+    "[Dark 2026]": {
+      "comments": "#8f8f8f",
+      // "strings": "#47b776",
+      "textMateRules": [
+        {
+          "scope": "entity.name.function",
+          "settings": {
+            "foreground": "#d8d88e",
+          },
+        },
+      ],
+    },
+  },
+  "editor.semanticTokenColorCustomizations": {
+    "[Dark 2026]": {
+      "enabled": true,
+      "rules": {
+        "function": "#d8d88e",
+      },
+    },
+  },
+  // Terminal
+  "terminal.integrated.defaultProfile.linux": "zsh",
+  "terminal.integrated.fontFamily": "Menlo for Powerline",
+  "terminal.integrated.enableMultiLinePasteWarning": "always",
+  // Debugging
+  "debug.javascript.autoAttachFilter": "smart",
+  // Tools and extensions
+  "clang-format.executable": "/usr/bin/clang-format",
+  "makefile.configureOnOpen": false,
+  "gutterpreview.imagePreviewMaxHeight": 20,
+  "gutterpreview.imagePreviewMaxWidth": 20,
+  "evenBetterToml.formatter.arrayAutoCollapse": true,
+  "evenBetterToml.formatter.arrayAutoExpand": true,
+  "evenBetterToml.formatter.allowedBlankLines": 2,
+  "evenBetterToml.formatter.columnWidth": 2,
+  // Live Server
+  "liveServer.settings.port": 5500,
+  "liveServer.settings.CustomBrowser": "chrome",
+  "liveServer.settings.donotVerifyTags": true,
+  "liveServer.settings.donotShowInfoMsg": true,
+  // Vim
+  "vim.vimrc.enable": true,
+  // Spelling
+  "cSpell.userWords": [],
+  "cSpell.enabledFileTypes": {
+    "jsonc": false,
+    "*": true
+  },
+  "cSpell.diagnosticLevel": "Hint",
+  // Git
+  "git.autofetch": true,
+  "git.openRepositoryInParentFolders": "never",
+}
