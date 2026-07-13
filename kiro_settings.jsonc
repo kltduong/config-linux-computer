@@ -74,7 +74,14 @@
   "[yaml]": {
     "editor.tabSize": 2
   },
-  // Python: Kiro uses Ruff settings here; language-server analysis is intentionally omitted.
+  // Python language server: ty (Astral) — https://docs.astral.sh/ty/reference/editor-settings/
+  // Ruff stays for lint + format + organize-imports; ty provides type-checking,
+  // IDE features (completion/hover/go-to-def), inlay hints, and SEMANTIC HIGHLIGHTING.
+  // The ty extension auto-sets this to "None"; kept explicit so no other LS competes.
+  "python.languageServer": "None",
+  // Diagnostics scope: openFilesOnly (default). Use "workspace" for project-wide,
+  // or "off" to run ty as highlighting/IDE only (no type-error messages).
+  "ty.diagnosticMode": "openFilesOnly",
   "python.testing.pytestEnabled": true,
   "python.testing.unittestEnabled": false,
   // JavaScript and TypeScript
@@ -212,7 +219,7 @@
   "workbench.colorTheme": "Dark+",
   "editor.tokenColorCustomizations": {
     "[Dark+]": {
-      "comments": "#b0b0b0",
+      "comments": "#afafaf",
     }
   }
 }
