@@ -208,5 +208,11 @@
     "**/compose.yaml",
     "**/compose.*.yml",
     "**/compose.*.yaml"
-  ]
+  ],
+  "workbench.colorTheme": "Dark+",
+  "editor.tokenColorCustomizations": {
+    "[Dark+]": {
+      "comments": "#b0b0b0",
+    }
+  }
 }

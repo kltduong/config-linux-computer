@@ -172,29 +172,6 @@
   "workbench.preferredDarkColorTheme": "Dark 2026",
   "workbench.secondarySideBar.defaultVisibility": "visible",
   "workbench.externalBrowser": "chrome",
-  // Theme tokens
-  "editor.tokenColorCustomizations": {
-    "[Dark 2026]": {
-      "comments": "#8f8f8f",
-      // "strings": "#47b776",
-      "textMateRules": [
-        {
-          "scope": "entity.name.function",
-          "settings": {
-            "foreground": "#d8d88e",
-          },
-        },
-      ],
-    },
-  },
-  "editor.semanticTokenColorCustomizations": {
-    "[Dark 2026]": {
-      "enabled": true,
-      "rules": {
-        "function": "#d8d88e",
-      },
-    },
-  },
   // Terminal
   "terminal.integrated.defaultProfile.linux": "zsh",
   "terminal.integrated.fontFamily": "Menlo for Powerline",
@@ -227,4 +204,20 @@
   // Git
   "git.autofetch": true,
   "git.openRepositoryInParentFolders": "never",
+  "yaml.disableSchemaDetection": [
+    "**/docker-compose.yml",
+    "**/docker-compose.yaml",
+    "**/docker-compose.*.yml",
+    "**/docker-compose.*.yaml",
+    "**/compose.yml",
+    "**/compose.yaml",
+    "**/compose.*.yml",
+    "**/compose.*.yaml"
+  ],
+  "workbench.colorTheme": "Dark+",
+  "editor.tokenColorCustomizations": {
+    "[Dark+]": {
+      "comments": "#afafaf",
+    }
+  }
 }
